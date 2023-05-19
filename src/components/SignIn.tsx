@@ -1,10 +1,9 @@
 import { User } from 'lucide-react'
-import Link from 'next/link'
 import Balance from 'react-wrap-balancer'
 
 export function SignIn() {
   return (
-    <Link
+    <a
       href={`https://github.com/login/oauth/authorize?client_id=${process.env.NEXT_PUBLIC_GITHUB_CLIENT_ID}`}
       className="flex items-center gap-3 text-left transition-colors hover:text-gray-50"
     >
@@ -18,6 +17,6 @@ export function SignIn() {
           memórias!
         </Balance>
       </p>
-    </Link>
+    </a>
   )
 }
